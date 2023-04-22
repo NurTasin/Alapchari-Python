@@ -1,11 +1,16 @@
 from setuptools import setup, find_packages
 
+with open("README.md", "r", encoding="utf-8") as fh:
+    long_description = fh.read()
+
 setup(
     name='Alapchari',
     version='1.0.0',
     author='Nur Mahmud Ul Alam Tasin',
     author_email='nmuatasin2005@gmail.com',
     description='Lets you interact with the Alapchari Chatbot.',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=[
         'requests'
